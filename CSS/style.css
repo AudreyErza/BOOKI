@@ -1,0 +1,6 @@
+/*Ajout de la fonctionnalité box-sizing*/
+
+* {
+ box-sizing: border-box;
+/* box-sizing est appliqué à tous les éléments */
+}
