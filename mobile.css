@@ -21,7 +21,7 @@ header
 {
     margin: 30px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 .menu
 {
@@ -39,7 +39,11 @@ li /*espacement entre les élements de menu*/
     padding-left:30px;
     padding-right:30px;
   }
-  .select
+  .selecta
   {
       color:#0065FC
+  }
+  .select
+  {
+      color: pink;
   }
