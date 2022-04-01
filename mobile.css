@@ -1,0 +1,45 @@
+/*Ajout de la fonctionnalité box-sizing*/
+* {
+    box-sizing: border-box;
+   /* box-sizing est appliqué à tous les éléments */
+   }
+
+/*ajout de la police Raleway*/
+body
+{
+    font-family:raleway;
+    color: rgb(4, 4, 5);
+}
+.logo
+{
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+header
+{
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+}
+.menu
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    list-style: none; /*suppression des points*/
+    position: absolute;
+    right: 5%;
+}
+
+li /*espacement entre les élements de menu*/
+{
+    padding-left:30px;
+    padding-right:30px;
+  }
+  .select
+  {
+      color:#0065FC
+  }
