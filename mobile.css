@@ -26,7 +26,7 @@ header
 .menu
 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: flex-end;
     list-style: none; /*suppression des points*/
@@ -38,12 +38,30 @@ li /*espacement entre les élements de menu*/
 {
     padding-left:30px;
     padding-right:30px;
-  }
-  .selecta
-  {
-      color:#0065FC
-  }
-  .select
-  {
-      color: pink;
-  }
+}
+.select
+{
+    color:#fc00c5
+}
+footer
+{
+    background-color: #F2F2F2;
+    padding: 50px;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    left: -5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}  
+.blocfooter
+{
+    padding-bottom: 30px;
+}
+.filtres
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
