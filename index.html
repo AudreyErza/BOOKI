@@ -5,16 +5,18 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!--Normalize.css-->
-        <link rel="stylesheet" href="style.css" > <!--police Raleway-->
+        <link rel="stylesheet" href="styles.css" > <!--police Raleway-->
         <script src="https://kit.fontawesome.com/9c41367ac0.js" crossorigin="anonymous"></script><!--Icones FontAwesome-->
         <link rel="stylesheet" media="screen and (max-width: 768px)" href="mobile.css" /> <!--mobile-->
+        <link rel="stylesheet" media="screen and (max-width: 992px) and (min-width: 769px)" href="tablet.css" /> <!--mobile-->
+        <link rel="stylesheet" media="screen and (max-width: 1680px) and (min-width: 993px)" href="style.css" /> <!--mobile-->
     </head>
     <header>
-        <img class="logo" src="images/logo/Booki.png" alt="logo booki">
+        <div class="logomob"><img class="logo" src="images/logo/Booki.png" alt="logo booki"></div>
     <nav >
         <ul class="menu">
-            <li class="select">Hébergements</li>
-            <li>Activités</li>
+            <li class="select"><a href=#hebergements>Hébergements</a></li>
+            <li><a href=#blocactivite>Activités</a></li>
         </ul>
     </nav>
     </header> <!--fin du header contenant la navbar-->
@@ -23,13 +25,19 @@
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <h3>En plein centre ville ou en pleine nature</h2>
         </div>
-        <div class="recherche">
+        <div class="recherchedesktop">
             <div class="localisation"><i class="fa-solid fa-location-dot"></i></div>
             <div class="find"><input type="search" placeholder="Marseille,France" id="site-search" name="q"></div>
-            <div class="valid">Rechercher</div>
+            <div class="valid"><div class="validtext">Rechercher</div></div>
             </div>
+            <div class="recherchemobile">
+            <div class="localisation"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="find"><input type="search" placeholder="Marseille, France" id="site-search" name="q"></div>
+            <div class="valid"><div class="validtext"><i class="fa-solid fa-magnifying-glass"></i></div></div>
+            </div>
+            <br>
         <div class="filtres">
-            <div>Filtres&nbsp;&nbsp;&nbsp;</div>&nbsp;&nbsp;&nbsp;
+            <div class="filtre">Filtres</div>
                 <div class="filtre1">
                 <div class="icon"><i class="fa-solid fa-money-bill-1-wave"></i></div>
                 <div class="textfiltre">&Eacuteconomique</div>
@@ -54,10 +62,161 @@
         <br>
         <div class="filtre1">
             <div class="iconinfo"><i class="fa-solid fa-info"></i></div>
-            <div>&nbsp&nbspPlus de 500 logements sont disponibles dans cette ville</div>
+            <div class="plus">Plus de 500 logements sont disponibles dans cette ville</div>
         </div> <!--Fin du div filtre1-->
-        <h3></i>&nbsp&nbsp</h3>
-        
+        <br>
+        <div id="hebergements">
+            <div class="blocheberg">
+                <h1>Hébergements à Marseille</h1>
+                <div class="cartes">
+                <!-- Carte 1-->
+                <a href="#"><div class="carteheberg">
+                    <div ><img class="imagecarte" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="La Cannebière image" ></div>
+                    <div class="descriptioncarte">
+                    <div class="titrecarte">Auberge La Cannebière</div>
+                    <div class="desccarte">Nuit à partir de 25€</div>
+                    <div class="notation">
+                    <div class="starpleine"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div><div class="starvide"><i class="fa-solid fa-star"></i></div>
+                </div> <!-- fin div notation-->
+                </div> <!-- fin div description carte-->
+                </div> <!-- fin div carteheberg--></a>
+                <!-- Carte 2-->
+                <a href="#"><div class="carteheberg">
+                    <div ><img class="imagecarte" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="le port image" ></div>
+                    <div class="descriptioncarte">
+                    <div class="titrecarte">Hôtel du port</div>
+                    <div class="desccarte">Nuit à partir de 52€</div>
+                    <div class="notation">
+                    <div class="starpleine"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                </div> <!-- fin div notation-->
+                </div> <!-- fin div description carte-->
+                </div> <!-- fin div carteheberg--></a>
+                <!-- Carte 3-->
+                <a href="#"><div class="carteheberg">
+                    <div ><img class="imagecarte" src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Les mouettes image" ></div>
+                    <div class="descriptioncarte">
+                    <div class="titrecarte">Hôtel Les mouettes</div>
+                    <div class="desccarte">Nuit à partir de 76€</div>
+                    <div class="notation">
+                    <div class="starpleine"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div><div class="starvide"><i class="fa-solid fa-star"></i></div>
+                </div> <!-- fin div notation-->
+                </div> <!-- fin div description carte-->
+                </div> <!-- fin div carteheberg--></a>
+                <!-- Carte 4-->
+                <a href="#"><div class="carteheberg">
+                    <div ><img class="imagecarte" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="la mer image" ></div>
+                    <div class="descriptioncarte">
+                    <div class="titrecarte">Hôtel de la mer</div>
+                    <div class="desccarte">Nuit à partir de 46€</div>
+                    <div class="notation">
+                    <div class="starpleine"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div><div class="starvide"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                </div> <!-- fin div notation-->
+                </div> <!-- fin div description carte-->
+                </div> <!-- fin div carteheberg--></a>
+                <!-- Carte 5-->
+                <a href="#"><div class="carteheberg">
+                    <div ><img class="imagecarte" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Le panier image" ></div>
+                    <div class="descriptioncarte">
+                    <div class="titrecarte">Auberge Le Panier</div>
+                    <div class="desccarte">Nuit à partir de 23€</div>
+                    <div class="notation">
+                    <div class="starpleine"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div><div class="starvide"><i class="fa-solid fa-star"></i></div>
+                </div> <!-- fin div notation-->
+                </div> <!-- fin div description carte-->
+                </div> <!-- fin div carteheberg--></a>
+                <!-- Carte 6-->
+                <a href="#"><div class="carteheberg">
+                    <div ><img class="imagecarte" src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="chez Amina image" ></div>
+                    <div class="descriptioncarte">
+                    <div class="titrecarte">Hôtel chez Amina</div>
+                    <div class="desccarte">Nuit à partir de 96€</div>
+                    <div class="notation">
+                    <div class="starpleine"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                </div> <!-- fin div notation-->
+                </div> <!-- fin div description carte-->
+                </div> <!-- fin div carteheberg--></a></a>
+            </div> <!-- fin div carte-->
+            <div class="plus"><h4>Afficher plus</h4></div>
+            </div><!-- fin div blocheberg-->
+            <div class="blocpopulaire">
+                <div class="titreclasspop"><h1>Les plus populaires</h1><h1><i class="fa-solid fa-arrow-up-right-dots"></i></h1></i></div>
+                <div class="cartes">
+                <!-- Carte 1-->
+                <div class="cartepop">
+                    <div ><img class="imagecartepop" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="soleil du matin image" ></div>
+                    <div class="descriptioncartepop">
+                    <div class="titrecartepop">Hôtel Le soleil du matin</div>
+                    <div class="desccartepop">Nuit à partir de 128€</div>
+                    <div class="notationpop">
+                        <div class="starpleine"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    </div> <!-- fin div notationpop-->
+                </div> <!-- fin div description carte-->
+                </div> <!-- fin div cartepop--></a>
+                <!-- Carte 2-->
+                <div class="cartepop">
+                    <div ><img class="imagecartepop" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="coeur de l'eau image" ></div>
+                    <div class="descriptioncartepop">
+                    <div class="titrecartepop">Au coeur de l'eau Chambres d'hôtes</div>
+                    <div class="desccartepop">Nuit à partir de 71€</div>
+                    <div class="notationpop">
+                        <div class="starpleine"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div><div class="starvide"><i class="fa-solid fa-star"></i></div>
+                    </div> <!-- fin div notationpop-->
+                </div> <!-- fin div description carte-->
+                </div> <!-- fin div cartepop--></a>
+                <!-- Carte 3-->
+                <div class="cartepop">
+                    <div ><img class="imagecartepop" src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="tout bleu et blanc image" ></div>
+                    <div class="descriptioncartepop">
+                    <div class="titrecartepop">Hôtel Tout bleu et blanc</div>
+                    <div class="desccartepop">Nuit à partir de 68€</div>
+                    <div class="notationpop">
+                    <div class="starpleine"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div><div class="starvide"><i class="fa-solid fa-star"></i></div>
+                </div> <!-- fin div notationpop-->
+                </div> <!-- fin div description carte-->
+                </div> <!-- fin div cartepop--></a>
+            </div> <!-- fin div carte-->
+            </div><!-- fin div blocpopulaire-->
+        </div>
+
+        <div id="blocactivite">
+            <h1>Activités à Marseille</h1>
+            <div class="cartesactiv">
+            <!-- Carte 1-->
+            <a href="#"><div class="carteactivite1">
+                <div ><img class="imagecarteactiv1" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="vieux port image"  ></div>
+                <div class="titrecarteact">Vieux port</div>
+            </div> <!-- fin div carteactivite--></a>
+            <div class="pave2">
+            <!-- Carte 2-->
+            <a href="#"><div class="carteactivite2">
+                <div ><img class="imagecarteactiv2" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Pomègues image"  ></div>
+                <div class="titrecarteact">Fort de Pomègues</div>
+            </div> <!-- fin div carteactivite--></a>
+            <!-- Carte 3-->
+            <a href="#"><div class="carteactivite3">
+                <div ><img class="imagecarteactiv3" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Frioul image"  ></div>
+                <div class="titrecarteact">Îles du Frioul</div>
+            </div> <!-- fin div carteactivite--></a>
+        </div><!--Fin du div pave2-->
+            <!-- Carte 4-->
+            <a href="#"><div class="carteactivite1">
+                <div ><img class="imagecarteactiv1" src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Calanques image"  ></div>
+                <div class="titrecarteact">Parc national des Calanques</div>
+            </div> <!-- fin div carteactivite--></a>
+            <div class="pave2">
+            <!-- Carte 5-->
+            <a href="#"><div class="carteactivite4">
+                <div ><img class="imagecarteactiv4" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde image"  ></div>
+                <div class="titrecarteact">Notre-Dame-de-la-Garde</div>
+            </div> <!-- fin div carteactivite--></a>
+            <!-- Carte 6-->
+            <a href="#"><div class="carteactivite4">
+                <div ><img class="imagecarteactiv4" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp image"  ></div>
+                <div class="titrecarteact">Parc Longchamp</div>
+            </div> <!-- fin div carteactivite--></a>
+        </div>
+        </div><!-- fin div blocheberg-->
+        </div>    
         </body>
         <footer>
             <div class="blocfooter">

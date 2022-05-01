@@ -5,22 +5,30 @@
    }
 
 /*ajout de la police Raleway*/
+@font-face {
+    font-family: Raleway;
+    src: url(/Font/raleway/Raleway-Black.ttf);
+}
+@font-face {
+    font-family: Raleway bold;
+    src: url(/Font/raleway/Raleway-Bold.ttf);
+}
 body
 {
     font-family:raleway;
     color: rgb(4, 4, 5);
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 /*LES TITRES --------------------------------------------------------------------------------------------------------------------------------------*/
 h1
 {
-    font-size: larger;
+    font-size: 25px;
     margin: 20px;
 }
 h2
 {
-    font-size: large;
+    font-size: 25px;
     margin: 20px;
     }
 h3
@@ -35,6 +43,17 @@ h4
     font-weight: bolder;
     margin: 20px;
 }
+a:link 
+{ 
+ text-decoration:none; 
+ color: initial;
+} 
+a:visited
+{ 
+ text-decoration:none; 
+ color: inherit;
+} 
+
 /* HEADER + MENU --------------------------------------------------------------------------------------------------------------------------------------*/
 .logo
 {
@@ -78,11 +97,15 @@ li /*espacement entre les élements de menu*/
     color: black;
     font-weight: bold;
   }
-.recherche
+.recherchedesktop
 {
     display: flex;
     margin-bottom: 10px;
     height: 45px;
+}
+.recherchemobile
+{
+    display: none
 }
 .localisation
 { 
@@ -105,6 +128,7 @@ li /*espacement entre les élements de menu*/
     justify-content: start;
     align-items: center;
 }
+
 #site-search
 {
     border: none;
@@ -127,19 +151,25 @@ li /*espacement entre les élements de menu*/
 {
     display: flex;
     align-items: center;
+    font-size: 20px;
 }
 .filtre1
 {
     display: flex;
+    align-items: center;
 
+}
+.filtre
+{
+    margin-right: 20px;
 }
 .icon
 {
 padding: 10px;
 background-color: #DEEBFF;
 border-radius: 50px;
-width: 38px;
-height: 38px;
+width: 42px;
+height: 42px;
 z-index: 1;
 color:#0065FC ;
 }
@@ -149,15 +179,15 @@ color:#0065FC ;
     border-top: 3px solid #F2F2F2 ;
     border-bottom: 3px solid #F2F2F2 ;
     border-right: 3px solid #F2F2F2 ;
-    width: 150px;
-    height: 38px;
+    width: 200px;
+    height: 42px;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
     position: relative;
     left: -15px;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     padding-left: 20px;
     
 }
@@ -172,15 +202,15 @@ color:#0065FC ;
     border-top: 3px solid #F2F2F2 ;
     border-bottom: 3px solid #F2F2F2 ;
     border-right: 3px solid #F2F2F2 ;
-    width: 180px;
-    height: 38px;
+    width: 230px;
+    height: 42px;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
     position: relative;
     left: -15px;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     padding-left: 10px;
     padding-left: 20px;
     
@@ -191,49 +221,63 @@ color:#0065FC ;
     border: 2px solid #F2F2F2;
     padding: 3px;
     border-radius: 50px;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: x-small;
+    font-size: small;
 }
-
+.intro 
+{
+    position: relative;
+    left: -10px;
+}
+.plus 
+{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 15px;
+    margin-left: 20px;
+}
 /* Bloc hebergements --------------------------------------------------------------------------------------------------------------------------------------*/
 .blocheberg
 {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    width: 65%;
-    height: 40%;
+    width: 1200px;
+    height: 650px;
     background-color: #F2F2F2 ;
     border-radius: 20px;
+    margin-bottom: 30px;
 }
 .carteheberg
 {
-    width: 27%;
-    aspect-ratio: 2/1;
+    width: 270px;
     border-radius: 20px;
     box-shadow: 3px 3px 4px 4px #d6d4d4;
     display: flex;
     flex-direction: column;
     background-color: white;
-    margin: 2%;
+    margin: 20px;
 
+}
+.carteheberg:hover
+{
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1);
 }
 .imagecarte
 {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    padding: 2%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 4px;
+    width: 268px;
+    height: 130px;
     object-fit: cover;
-    width: 100%;
-    aspect-ratio: 2/1;
-    
+       
 }
 .descriptioncarte
 {
@@ -278,54 +322,56 @@ color:#0065FC ;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    height: auto;
+    justify-content: space-around;
 }
-.plus
-{
-    width: 60%;
-}
+
 
 /* Bloc populaire -------------------------------------------------------------------------------------------------------------------------------------- */
 .blocpopulaire
 {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 33%;
-    height: 40%;
+    width: 400px;
+    height: 650px;
     background-color: #F2F2F2 ;
     border-radius: 20px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+.titreclasspop
+{ 
+    display: flex;
+    justify-content: space-between;
 }
 .cartepop
 {
-    width: 94%;
-    aspect-ratio: 4/2;
+    width: 400px;
     border-radius: 20px;
     box-shadow: 3px 3px 4px 4px #d6d4d4;
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
     background-color: white;
-    margin: 2%;
+    margin:20px
+}
+.cartepop:hover
+{
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1);
 }
 .imagecartepop
 {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    padding: 2%;
+    padding: 4px;
     display: flex;
     justify-content: center;
     object-fit: cover;
-    width: 100%;
+    width: 150px;
     aspect-ratio: 1/1;
     
 } 
-.notationpop
-{ 
-    display: flex;
-    flex: row;
-    padding-top: 40px;
-}
 .descriptioncartepop
 {
     display: flex;
@@ -338,10 +384,10 @@ color:#0065FC ;
 .titrecartepop
 {
     padding-bottom: 10px;
-    padding-right: 60px;
-    padding-top: 5px;
-    font-size: larger;
+    padding-top: 10px;
+    font-size: 15px;
     font-weight: bolder;
+    width: 100%;
 }
 .desccartepop
 {
@@ -350,8 +396,15 @@ color:#0065FC ;
     padding-bottom: 6px;
     padding-top: 6px;
 }
+.notationpop
+{ 
+    display: flex;
+    flex: row;
+    padding-top: 40px;
+}
+
 /* Hebergements --------------------------------------------------------------------------------------------------------------------------------------*/
-.hebergements
+#hebergements
 {
     display: flex;
     flex-direction: row;
@@ -362,6 +415,7 @@ color:#0065FC ;
 { 
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 .carteactivite1
 {
@@ -373,7 +427,12 @@ color:#0065FC ;
     flex-direction: column;
     background-color: white;
     margin: 20px;
-
+}
+.carteactivite1:hover
+{
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1);
 }
 .carteactivite2
 {
@@ -385,6 +444,12 @@ color:#0065FC ;
     flex-direction: column;
     background-color: white;
     margin: 20px;
+}
+.carteactivite2:hover
+{
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1);
 }
 .carteactivite3
 {
@@ -398,6 +463,12 @@ color:#0065FC ;
     margin: 20px;
     margin-top: 40px;
 }
+.carteactivite3:hover
+{
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1);
+}
 .carteactivite4
 {
     width: 300px;
@@ -410,13 +481,51 @@ color:#0065FC ;
     margin: 20px;
     margin-bottom: 35px;
 }
-.imagecarteactiv
+.carteactivite4:hover
+{
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1);
+}
+.imagecarteactiv1
 {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     display: flex;
     justify-content: center;
     object-fit: cover;
+    width: 300px;
+    height: 350px;
+}
+.imagecarteactiv2
+{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+    width: 300px;
+    height: 170px;
+}
+.imagecarteactiv3
+{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+    width: 300px;
+    height: 90px;
+}
+.imagecarteactiv4
+{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+    width: 300px;
+    height: 130px;
 }
 .titrecarteact
 {
