@@ -318,7 +318,7 @@ align-items: center;
 }
 .titrecarte
 {
-    font-size: 30px;
+    font-size: 28px;
     font-weight: bolder;
     padding-bottom: 10px;
 }
@@ -410,13 +410,13 @@ align-items: center;
     padding-bottom: 3%;
     padding-right: 10%;
     width: 60%;
-    color: yellowgreen;
+    color: #365A2F;
 }
 .titrecartepop
 {
     padding-bottom: 10px;
     padding-top: 10px;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: bolder;
     width: 100%;
 }
