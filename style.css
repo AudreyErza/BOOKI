@@ -1,3 +1,6 @@
+/*taille écran*/
+@media all and (max-width:1680px) {
+
 /*Ajout de la fonctionnalité box-sizing*/
 * {
     box-sizing: border-box;
@@ -7,12 +10,9 @@
 /*ajout de la police Raleway*/
 @font-face {
     font-family: Raleway;
-    src: url(/Font/raleway/Raleway-Black.ttf);
-}
-@font-face {
-    font-family: Raleway bold;
-    src: url(/Font/raleway/Raleway-Bold.ttf);
-}
+    src: url("file:///Users/audreyyy/Google%C2%A0Drive%20/Ma%20Formation/Dev/Projet%202/BOOKI/Font/raleway/Raleway-Regular.ttf") format("truetype");
+ }
+
 body
 {
     font-family:raleway;
@@ -551,3 +551,4 @@ footer
     display: flex;
     justify-content: flex-start;
 }
+  }
