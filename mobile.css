@@ -192,11 +192,11 @@ li /*espacement entre les élements de menu*/
 padding: 21px;
 background-color: #DEEBFF;
 border-radius: 50px;
-width: 80px;
-height: 80px;
+width: 60px;
+height: 60px;
 z-index: 1;
 color:#0065FC ;
-font-size: 30px;
+font-size: 25px;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -207,8 +207,8 @@ align-items: center;
     border-top: 3px solid #F2F2F2 ;
     border-bottom: 3px solid #F2F2F2 ;
     border-right: 3px solid #F2F2F2 ;
-    width: 210px;
-    height: 80px;
+    width: 190px;
+    height: 60px;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
     position: relative;
@@ -219,7 +219,7 @@ align-items: center;
     padding-left: 25px;
     margin-bottom: 10px;
     font-weight: 900;
-    font-size: 25px;
+    font-size: 20px;
     
 }
 .textfiltre:hover
@@ -233,8 +233,8 @@ align-items: center;
     border-top: 3px solid #F2F2F2 ;
     border-bottom: 3px solid #F2F2F2 ;
     border-right: 3px solid #F2F2F2 ;
-    width: 290px;
-    height: 80px;
+    width: 270px;
+    height: 60px;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
     position: relative;
@@ -245,7 +245,7 @@ align-items: center;
     padding-left: 10px;
     padding-left: 20px;
     font-weight: 900;
-    font-size: 25px;
+    font-size: 20px;
     
 }
 .iconinfo
@@ -253,11 +253,11 @@ align-items: center;
     color: #0065FC;
     border: 2px solid #F2F2F2;
     border-radius: 50px;
-    width: 40px;
+    width: 70px;
     height: 40px;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     font-size: 20px;
     margin-left: 20px;
 }
