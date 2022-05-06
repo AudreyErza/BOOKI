@@ -117,9 +117,9 @@ li /*espacement entre les élements de menu*/
 {
     display: flex;
     flex-direction: row;
-    margin: 20px;
+    margin: 2%;
     justify-content: center;
-    width: 100%;
+    width: 90%;
 }
 .localisation
 { 
@@ -147,7 +147,7 @@ li /*espacement entre les élements de menu*/
 #site-search
 {
     border: none;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 900;
 }
 .valid
