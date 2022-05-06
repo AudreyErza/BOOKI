@@ -365,7 +365,6 @@ align-items: center;
 { 
     display: flex;
     justify-content: space-between;
-    color: yellowgreen;
 }
 .cartepop
 {
@@ -411,6 +410,7 @@ align-items: center;
     padding-bottom: 3%;
     padding-right: 10%;
     width: 60%;
+    color: yellowgreen;
 }
 .titrecartepop
 {
