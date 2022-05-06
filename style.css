@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 /*taille écran*/
 @media only screen and (max-width: 1680px) {
 
+=======
+>>>>>>> parent of 1a52c3c (,)
 /*Ajout de la fonctionnalité box-sizing*/
 * {
     box-sizing: border-box;
@@ -10,9 +13,12 @@
 /*ajout de la police Raleway*/
 @font-face {
     font-family: Raleway;
-    src: url("file:///Users/audreyyy/Google%C2%A0Drive%20/Ma%20Formation/Dev/Projet%202/BOOKI/Font/raleway/Raleway-Regular.ttf") format("truetype");
- }
-
+    src: url(/Font/raleway/Raleway-Black.ttf);
+}
+@font-face {
+    font-family: Raleway bold;
+    src: url(/Font/raleway/Raleway-Bold.ttf);
+}
 body
 {
     font-family:raleway;
@@ -551,4 +557,3 @@ footer
     display: flex;
     justify-content: flex-start;
 }
-  }
