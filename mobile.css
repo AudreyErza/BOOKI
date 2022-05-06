@@ -1,8 +1,11 @@
-/*Ajout de la fonctionnalité box-sizing*/
-* {
+/*taille écran*/
+@media all and (max-width:768px) {
+    /*Ajout de la fonctionnalité box-sizing*/
+* 
+{
     box-sizing: border-box;
    /* box-sizing est appliqué à tous les éléments */
-   }
+}
 
 /*ajout de la police Raleway*/
 body
@@ -571,4 +574,5 @@ footer
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+}
 }
