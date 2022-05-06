@@ -13,7 +13,7 @@ body
 /*LES TITRES --------------------------------------------------------------------------------------------------------------------------------------*/
 h1
 {
-    font-size: 35px;
+    font-size: 30px;
     font-weight: bolder;
     margin: 20px;
     color: fuchsia;
@@ -21,20 +21,20 @@ h1
 }
 h2
 {
-    font-size: 30px;
+    font-size: 25px;
     margin: 20px;
     color: aqua;
     }
 h3
 {
-    font-size: 27px;
+    font-size: 22px;
     font-weight: 400;
     margin: 20px;
     color: orange;
 }
 h4
 {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 900;
     margin: 30px;
     color: green;
@@ -318,13 +318,13 @@ align-items: center;
 }
 .titrecarte
 {
-    font-size: 28px;
+    font-size: 25px;
     font-weight: bolder;
     padding-bottom: 10px;
 }
 .desccarte
 {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 100;
     padding-bottom: 20px;
 }
@@ -408,21 +408,21 @@ align-items: center;
     justify-content: flex-start;
     padding-left: 3%;
     padding-bottom: 3%;
-    padding-right: 10%;
+    padding-right: 5%;
     width: 60%;
-    color: #365A2F;
+    color: #4e10dd;
 }
 .titrecartepop
 {
-    padding-bottom: 10px;
-    padding-top: 10px;
-    font-size: 28px;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    font-size: 25px;
     font-weight: bolder;
     width: 100%;
 }
 .desccartepop
 {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 100;
     padding-bottom: 40px;
     padding-top: 6px;
@@ -431,7 +431,7 @@ align-items: center;
 { 
     display: flex;
     flex: row;
-    padding-top: 40px;
+    padding-top: 1%;
     font-size: 20px;
 }
 
