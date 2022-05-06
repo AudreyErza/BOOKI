@@ -1,5 +1,5 @@
 /*taille écran*/
-@media all and (max-width:768px) and (min-width:992px) {
+@media only screen and (min-width:768px) and (max-width:992px) {
 
     /*Ajout de la fonctionnalité box-sizing*/
 * {

@@ -1,5 +1,5 @@
 /*taille écran*/
-@media all and (max-width:768px) {
+@media only screen and (max-width: 768px) {
     /*Ajout de la fonctionnalité box-sizing*/
 * 
 {
@@ -20,6 +20,7 @@ h1
     font-weight: bolder;
     margin: 20px;
     margin-top: 30px;
+    color: fuchsia;
 }
 h2
 {
