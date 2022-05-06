@@ -151,6 +151,7 @@ li /*espacement entre les élements de menu*/
     background-color: #0065FC;
     color: white;
     padding: 2%;
+    margin-left: -4%;
     border-radius: 30%;
     width: 15%;
     display: flex;
@@ -171,14 +172,14 @@ li /*espacement entre les élements de menu*/
 {
     width: 100%;
     margin: 20px;
-    font-size: 30px;
+    font-size: 25px;
 }
 .filtres
 {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    font-size: 20px;
+    font-size: 16px;
     margin-left: 30px;
 }
 .filtre1
@@ -562,15 +563,10 @@ align-items: center;
 
 /* FOOTER --------------------------------------------------------------------------------------------------------------------------------------*/
 
-.blocfooter
-{
-    padding-right: 200px;
-}
 footer
 {
     background-color: #F2F2F2;
-    padding: 50px;
-    margin: 0;
+    padding: 5%;
     width: 100%;
     position: absolute;
     left: -5px;
