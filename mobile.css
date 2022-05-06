@@ -115,7 +115,7 @@ li /*espacement entre les élements de menu*/
     flex-direction: row;
     margin: 2%;
     justify-content: center;
-    width: 90%;
+    width: 100%;
 }
 .localisation
 { 
@@ -156,11 +156,14 @@ li /*espacement entre les élements de menu*/
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    left: -30px;
     font-size: 150%;
 }
-
+.blocrecherche
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 
 
 /* LES FILTRES --------------------------------------------------------------------------------------------------------------------------------------*/
