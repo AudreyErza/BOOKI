@@ -1,5 +1,3 @@
-/*taille écran*/
-@media only screen and (max-width: 768px) {
     /*Ajout de la fonctionnalité box-sizing*/
 * 
 {
@@ -16,7 +14,7 @@ body
 /*LES TITRES --------------------------------------------------------------------------------------------------------------------------------------*/
 h1
 {
-    font-size: 30px;
+    font-size: 140%;
     font-weight: bolder;
     margin: 20px;
     margin-top: 30px;
@@ -24,21 +22,16 @@ h1
 }
 h2
 {
-    font-size: 25px;
+    font-size: 130%;
     margin: 20px;
     }
 h3
 {
-    font-size: 22px;
+    font-size: 120%;
     font-weight: 400;
     margin: 20px;
 }
-h4
-{
-    font-size: 20px;
-    font-weight: 900;
-    margin: 30px;
-}
+
 a:link 
 { 
  text-decoration:none; 
@@ -75,7 +68,7 @@ header
     display: flex;
     flex-direction: row;
     list-style: none; /*suppression des points*/
-    font-size: 25px;
+    font-size: 120%;
     margin-left: -40px;
 }
 
@@ -91,7 +84,7 @@ li /*espacement entre les élements de menu*/
 
 }
 
-.select
+.elemtmenu:hover
 {
     color:#0065FC;
     border-bottom: 3px solid #0065FC;
@@ -575,5 +568,4 @@ footer
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-}
 }

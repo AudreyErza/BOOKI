@@ -3,10 +3,18 @@
     box-sizing: border-box;
    /* box-sizing est appliqué à tous les éléments */
    }
-
+/*ajout de la police Raleway*/
+@font-face {
+    font-family: Raleway;
+    src: url(/Font/raleway/Raleway-Black.ttf);
+}
+@font-face {
+    font-family: Raleway bold;
+    src: url(/Font/raleway/Raleway-Bold.ttf);
+}
 body
 {
-    font-family:Raleway;
+    font-family:raleway;
     color: rgb(4, 4, 5);
     margin-left: 30px;
     margin-right: 30px;
@@ -14,21 +22,27 @@ body
 /*LES TITRES --------------------------------------------------------------------------------------------------------------------------------------*/
 h1
 {
-    font-size: 140%;
+    font-size: 25px;
     margin: 20px;
+    color: maroon;
 }
 h2
 {
-    font-size: 130%;
+    font-size: 25px;
     margin: 20px;
     }
 h3
 {
-    font-size: 120%;
+    font-size: 14px;
     font-weight: 300;
     margin: 20px;
 }
-
+h4
+{
+    font-size: medium;
+    font-weight: bolder;
+    margin: 20px;
+}
 a:link 
 { 
  text-decoration:none; 
@@ -43,7 +57,7 @@ a:visited
 /* HEADER + MENU --------------------------------------------------------------------------------------------------------------------------------------*/
 .logo
 {
-    height: 100px;
+    height: 80px;
     display: flex;
     justify-content: flex-start;
     padding-top: 30px;;
