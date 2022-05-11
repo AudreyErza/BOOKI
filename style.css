@@ -14,7 +14,7 @@ body
 /*LES TITRES --------------------------------------------------------------------------------------------------------------------------------------*/
 h1
 {
-    font-size: 140%;
+    font-size: 150%;
     margin: 20px;
 }
 h2
@@ -24,9 +24,14 @@ h2
     }
 h3
 {
-    font-size: 120%;
-    font-weight: 300;
+    font-size: 100%;
     margin: 20px;
+    font-weight: 100;
+}
+h4
+{
+    font-size: 90%;
+    font-weight: 100;
 }
 
 a:link 
@@ -175,6 +180,7 @@ color:#0065FC ;
     align-items: center;
     justify-content: center;
     padding-left: 20px;
+    font-size: 100%;
     
 }
 .textfiltre:hover
@@ -226,6 +232,7 @@ color:#0065FC ;
     flex-wrap: wrap;
     font-size: 15px;
     margin-left: 20px;
+
 }
 /* Bloc hebergements --------------------------------------------------------------------------------------------------------------------------------------*/
 .blocheberg
@@ -246,7 +253,6 @@ color:#0065FC ;
     display: flex;
     flex-direction: column;
     background-color: white;
-    margin: 20px;
 
 }
 .carteheberg:hover
@@ -303,26 +309,31 @@ color:#0065FC ;
     flex: row;
 }
 
-.cartes
+.cartesheb
 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-content: space-between;
+    height: 470px;
 }
-
+.affichplus
+{
+    margin-top: 10px;
+}
 
 /* Bloc populaire -------------------------------------------------------------------------------------------------------------------------------------- */
 .blocpopulaire
 {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 400px;
     height: 650px;
     background-color: #F2F2F2 ;
     border-radius: 20px;
     margin-left: 30px;
-    margin-bottom: 30px;
 }
 .titreclasspop
 { 
@@ -331,7 +342,7 @@ color:#0065FC ;
 }
 .cartepop
 {
-    width: 400px;
+    width: 370px;
     border-radius: 20px;
     box-shadow: 3px 3px 4px 4px #d6d4d4;
     display: flex;
@@ -388,6 +399,11 @@ color:#0065FC ;
     flex: row;
     padding-top: 40px;
 }
+.cartes
+{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 /* Hebergements --------------------------------------------------------------------------------------------------------------------------------------*/
 #hebergements
@@ -397,10 +413,15 @@ color:#0065FC ;
     justify-content: space-around;
 }
 /* Bloc activités --------------------------------------------------------------------------------------------------------------------------------------*/
+.blocactivite
+{
+ width: 100%;
+}
 .cartesactiv
 { 
     display: flex;
     flex-direction: row;
+    justify-content: center;
     width: 100%;
 }
 .carteactivite1

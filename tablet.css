@@ -4,15 +4,7 @@
    /* box-sizing est appliqué à tous les éléments */
    }
 
-/*ajout de la police Raleway*/
-@font-face {
-    font-family: Raleway;
-    src: url(/Font/raleway/Raleway-Black.ttf);
-}
-@font-face {
-    font-family: Raleway bold;
-    src: url(/Font/raleway/Raleway-Bold.ttf);
-}
+
 body
 {
     font-family:Raleway;
@@ -147,7 +139,10 @@ li /*espacement entre les élements de menu*/
 {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    align-content: space-around;
     font-size: 20px;
+    height: 100px;
 }
 .filtre1
 {
