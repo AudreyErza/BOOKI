@@ -150,6 +150,12 @@ li /*espacement entre les élements de menu*/
     align-items: center;
 
 }
+.filtreplus
+{
+    display: flex;
+    align-items: center;
+
+}
 .filtre
 {
     margin-right: 20px;

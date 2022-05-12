@@ -22,16 +22,21 @@ h1
 }
 h2
 {
-    font-size: 130%;
+    font-size: 110%;
     margin: 20px;
+    font-weight: bolder;
     }
 h3
 {
-    font-size: 120%;
+    font-size: 100%;
     font-weight: 400;
     margin: 20px;
 }
-
+h4
+{
+    font-size: 90%;
+    font-weight: 100;
+}
 a:link 
 { 
  text-decoration:none; 
@@ -120,12 +125,12 @@ li /*espacement entre les élements de menu*/
     padding: 5%;
     border-top-left-radius: 30%;
     border-bottom-left-radius: 30%;
-    width: 15%;
+    width: 12%;
     aspect-ratio: 1/1;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 200%;
+    font-size: 120%;
 }
 .find
 { 
@@ -140,7 +145,7 @@ li /*espacement entre les élements de menu*/
 #site-search
 {
     border: none;
-    font-size: 25px;
+    font-size: 120%;
     font-weight: 900;
 }
 .valid
@@ -150,11 +155,11 @@ li /*espacement entre les élements de menu*/
     padding: 2%;
     margin-left: -4%;
     border-radius: 30%;
-    width: 15%;
+    width: 12%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 150%;
+    font-size: 120%;
 }
 .blocrecherche
 {
@@ -169,7 +174,7 @@ li /*espacement entre les élements de menu*/
 {
     width: 100%;
     margin: 20px;
-    font-size: 25px;
+    font-size: 120%;
 }
 .filtres
 {
@@ -182,18 +187,22 @@ li /*espacement entre les élements de menu*/
 .filtre1
 {
     display: flex;
-
+}
+.filtreplus
+{
+    display: flex;
+    align-items: center;
 }
 .icon
 {
 padding: 21px;
 background-color: #DEEBFF;
 border-radius: 50px;
-width: 60px;
-height: 60px;
+width: 50px;
+height: 50px;
 z-index: 1;
 color:#0065FC ;
-font-size: 25px;
+font-size: 20px;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -204,12 +213,12 @@ align-items: center;
     border-top: 3px solid #F2F2F2 ;
     border-bottom: 3px solid #F2F2F2 ;
     border-right: 3px solid #F2F2F2 ;
-    width: 190px;
-    height: 60px;
+    width: 160px;
+    height: 50px;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
     position: relative;
-    left: -35px;
+    left: -30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -230,12 +239,12 @@ align-items: center;
     border-top: 3px solid #F2F2F2 ;
     border-bottom: 3px solid #F2F2F2 ;
     border-right: 3px solid #F2F2F2 ;
-    width: 270px;
-    height: 60px;
+    width: 260px;
+    height: 50px;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
     position: relative;
-    left: -35px;
+    left: -30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -250,7 +259,7 @@ align-items: center;
     color: #0065FC;
     border: 2px solid #F2F2F2;
     border-radius: 50px;
-    width: 70px;
+    width: 50px;
     height: 40px;
     display: flex;
     justify-content: center;
@@ -263,8 +272,7 @@ align-items: center;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    font-size: 25px;
-    margin-left: 15px;
+    font-size: 120%;
 }
 
 /* Bloc hebergements --------------------------------------------------------------------------------------------------------------------------------------*/
@@ -316,14 +324,14 @@ align-items: center;
 }
 .titrecarte
 {
-    font-size: 25px;
+    font-size: 130%;
     font-weight: bolder;
     padding-bottom: 10px;
 }
 .desccarte
 {
-    font-size: 20px;
-    font-weight: 100;
+    font-size: 100%;
+    font-weight: thin;
     padding-bottom: 20px;
 }
 
@@ -413,13 +421,13 @@ align-items: center;
 {
     padding-bottom: 3%;
     padding-top: 3%;
-    font-size: 25px;
+    font-size: 130%;
     font-weight: bolder;
     width: 100%;
 }
 .desccartepop
 {
-    font-size: 20px;
+    font-size: 100%;
     font-weight: 100;
     padding-bottom: 40px;
     padding-top: 6px;
@@ -552,10 +560,9 @@ align-items: center;
 }
 .titrecarteact
 {
-    font-size: medium;
+    font-size: 130%;
     font-weight: 900;
     padding: 25px;
-    font-size: 25px;
 }
 
 /* FOOTER --------------------------------------------------------------------------------------------------------------------------------------*/
