@@ -3,19 +3,20 @@
     box-sizing: border-box;
    /* box-sizing est appliqué à tous les éléments */
    }
+
 body
 {
     font-family:Raleway;
     color: rgb(4, 4, 5);
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 12%;
+    margin-right: 12%;
 }
 /*LES TITRES --------------------------------------------------------------------------------------------------------------------------------------*/
 h1
 {
-    font-size: 140%;
+    font-size: 150%;
     margin: 20px;
-    color: maroon;
+    color: #0065FC;
 }
 h2
 {
@@ -24,10 +25,16 @@ h2
     }
 h3
 {
-    font-size: 120%;
-    font-weight: 300;
+    font-size: 100%;
     margin: 20px;
+    font-weight: 100;
 }
+h4
+{
+    font-size: 90%;
+    font-weight: 100;
+}
+
 a:link 
 { 
  text-decoration:none; 
@@ -42,7 +49,7 @@ a:visited
 /* HEADER + MENU --------------------------------------------------------------------------------------------------------------------------------------*/
 .logo
 {
-    height: 80px;
+    height: 100px;
     display: flex;
     justify-content: flex-start;
     padding-top: 30px;;
@@ -63,7 +70,7 @@ header
     justify-content: flex-end;
     list-style: none; /*suppression des points*/
     position: absolute;
-    right: 5%;
+    right: 13%;
 }
 
 li /*espacement entre les élements de menu*/
@@ -144,6 +151,12 @@ li /*espacement entre les élements de menu*/
     align-items: center;
 
 }
+.filtreplus
+{
+    display: flex;
+    align-items: center;
+
+}
 .filtre
 {
     margin-right: 20px;
@@ -174,6 +187,7 @@ color:#0065FC ;
     align-items: center;
     justify-content: center;
     padding-left: 20px;
+    font-size: 100%;
     
 }
 .textfiltre:hover
@@ -225,6 +239,7 @@ color:#0065FC ;
     flex-wrap: wrap;
     font-size: 15px;
     margin-left: 20px;
+
 }
 /* Bloc hebergements --------------------------------------------------------------------------------------------------------------------------------------*/
 .blocheberg
@@ -245,7 +260,6 @@ color:#0065FC ;
     display: flex;
     flex-direction: column;
     background-color: white;
-    margin: 20px;
 
 }
 .carteheberg:hover
@@ -261,8 +275,7 @@ color:#0065FC ;
     padding: 4px;
     width: 268px;
     height: 130px;
-    object-fit: cover;
-       
+    object-fit: cover;    
 }
 .descriptioncarte
 {
@@ -302,26 +315,31 @@ color:#0065FC ;
     flex: row;
 }
 
-.cartes
+.cartesheb
 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-content: space-between;
+    height: 470px;
 }
-
+.affichplus
+{
+    margin-top: 10px;
+}
 
 /* Bloc populaire -------------------------------------------------------------------------------------------------------------------------------------- */
 .blocpopulaire
 {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 400px;
     height: 650px;
     background-color: #F2F2F2 ;
     border-radius: 20px;
     margin-left: 30px;
-    margin-bottom: 30px;
 }
 .titreclasspop
 { 
@@ -330,7 +348,7 @@ color:#0065FC ;
 }
 .cartepop
 {
-    width: 400px;
+    width: 370px;
     border-radius: 20px;
     box-shadow: 3px 3px 4px 4px #d6d4d4;
     display: flex;
@@ -387,6 +405,11 @@ color:#0065FC ;
     flex: row;
     padding-top: 40px;
 }
+.cartes
+{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 /* Hebergements --------------------------------------------------------------------------------------------------------------------------------------*/
 #hebergements
@@ -396,10 +419,15 @@ color:#0065FC ;
     justify-content: space-around;
 }
 /* Bloc activités --------------------------------------------------------------------------------------------------------------------------------------*/
+.blocactivite
+{
+ width: 100%;
+}
 .cartesactiv
 { 
     display: flex;
     flex-direction: row;
+    justify-content: center;
     width: 100%;
 }
 .carteactivite1
@@ -529,10 +557,7 @@ footer
 {
     background-color: #F2F2F2;
     padding: 50px;
-    margin: 0;
     width: 100%;
-    position: absolute;
-    left: -5px;
     display: flex;
     justify-content: flex-start;
 }
