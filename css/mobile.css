@@ -40,7 +40,7 @@ h3
 h4
 {
     font-size: 90%;
-    font-weight: 400;
+    font-weight: normal;
 }
 a:link 
 { 
@@ -229,7 +229,6 @@ align-items: center;
     justify-content: flex-start;
     padding-left: 25px;
     margin-bottom: 10px;
-    font-weight: 500;
     font-size: 20px;
     
 }
@@ -255,7 +254,6 @@ align-items: center;
     justify-content: flex-start;
     padding-left: 15px;
     padding-left: 20px;
-    font-weight: 500;
     font-size: 20px;
     
 }
