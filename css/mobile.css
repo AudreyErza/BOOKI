@@ -1,35 +1,43 @@
+@media screen and (max-width:768px) {
+    
 /*Ajout de la fonctionnalité box-sizing*/
-* {
+* 
+{
     box-sizing: border-box;
    /* box-sizing est appliqué à tous les éléments */
-   }
+}
 
-
+/*ajout de la police Raleway*/
 body
 {
     font-family:Raleway;
     color: rgb(4, 4, 5);
-    margin-left: 30px;
-    margin-right: 30px;
 }
 /*LES TITRES --------------------------------------------------------------------------------------------------------------------------------------*/
 h1
 {
     font-size: 140%;
-    margin: 20px;
+    font-weight: bolder;
+    margin: 10px;
+    margin-top: 30px;
 }
 h2
 {
-    font-size: 130%;
-    margin: 20px;
+    font-size: 110%;
+    margin: 10px;
+    font-weight: bolder;
     }
 h3
 {
-    font-size: 120%;
-    font-weight: 300;
-    margin: 20px;
+    font-size: 100%;
+    font-weight: 400;
+    margin: 10px;
 }
-
+h4
+{
+    font-size: 90%;
+    font-weight: 100;
+}
 a:link 
 { 
  text-decoration:none; 
@@ -44,40 +52,56 @@ a:visited
 /* HEADER + MENU --------------------------------------------------------------------------------------------------------------------------------------*/
 .logo
 {
-    height: 100px;
-    display: flex;
-    justify-content: flex-start;
-    padding-top: 30px;;
+    width: 30%;
+    margin-top: 30px;
 }
-
+.logomob img
+{
+    content: url("images/logo/Booki@3x.png");
+}
+.logomob
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 header
 {
-    margin: 30px;
-    display: flex;
-    flex-direction: row;
-    margin-left: 50px;
+    width: 100%;
 }
 .menu
 {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
     list-style: none; /*suppression des points*/
-    position: absolute;
-    right: 5%;
+    font-size: 120%;
+    margin-left: -40px;
 }
 
 li /*espacement entre les élements de menu*/
 {
-    padding-left:30px;
-    padding-right:30px;
-    padding-top: 30px;
+    border-bottom: 3px solid #F2F2F2;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    width: 50%;
+    height: 80px;
+    align-items: center;
+
 }
+
 .elemtmenu:hover
 {
     color:#0065FC;
-    border-top: 1px solid #0065FC;
+    border-bottom: 3px solid #0065FC;
+}
+.intro
+{
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    left: -10px;
 }
 /* LA RECHERCHE --------------------------------------------------------------------------------------------------------------------------------------*/
 ::placeholder {
@@ -86,86 +110,103 @@ li /*espacement entre les élements de menu*/
   }
 .recherchedesktop
 {
-    display: flex;
-    margin-bottom: 10px;
-    height: 45px;
+    display: none;
 }
 .recherchemobile
 {
-    display: none
+    display: flex;
+    flex-direction: row;
+    margin: 2%;
+    justify-content: center;
+    width: 100%;
 }
 .localisation
 { 
     background-color: #F2F2F2;
-    padding: 15px;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    width: 50px;
+    padding: 5%;
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 30%;
+    width: 12%;
+    aspect-ratio: 1/1;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 120%;
 }
 .find
 { 
     border-top: 2px solid #F2F2F2;
     border-bottom: 2px solid #F2F2F2;
-    padding: 15px;
-    width: 200px;
+    padding-left: 2%;
+    width: 70%;
     display: flex;
     justify-content: start;
     align-items: center;
 }
-
 #site-search
 {
     border: none;
+    font-size: 120%;
+    font-weight: 900;
 }
 .valid
 { 
     background-color: #0065FC;
     color: white;
-    padding: 15px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    width: 120px;
+    padding: 2%;
+    margin-left: -4%;
+    border-radius: 30%;
+    width: 12%;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
+    font-size: 120%;
+}
+.blocrecherche
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
+
 /* LES FILTRES --------------------------------------------------------------------------------------------------------------------------------------*/
+.filtre
+{
+    width: 100%;
+    font-size: 120%;
+    padding-bottom: 10px;
+}
 .filtres
 {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    align-content: space-around;
-    font-size: 20px;
-    height: 100px;
+    font-size: 16px;
+    margin-left: 30px;
 }
 .filtre1
 {
     display: flex;
-    align-items: center;
 }
 .filtreplus
 {
     display: flex;
     align-items: center;
 }
-.filtre
-{
-    margin-right: 20px;
-}
 .icon
 {
-padding: 10px;
+padding: 21px;
 background-color: #DEEBFF;
 border-radius: 50px;
-width: 42px;
-height: 42px;
+width: 50px;
+height: 50px;
 z-index: 1;
 color:#0065FC ;
+font-size: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 .textfiltre
 {
@@ -174,16 +215,18 @@ color:#0065FC ;
     border-bottom: 3px solid #F2F2F2 ;
     border-right: 3px solid #F2F2F2 ;
     width: 160px;
-    height: 42px;
+    height: 50px;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
     position: relative;
-    left: -15px;
+    left: -30px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 90%;
-    font-weight: thin;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    font-weight: 900;
+    font-size: 20px;
     
 }
 .textfiltre:hover
@@ -197,79 +240,77 @@ color:#0065FC ;
     border-top: 3px solid #F2F2F2 ;
     border-bottom: 3px solid #F2F2F2 ;
     border-right: 3px solid #F2F2F2 ;
-    width: 230px;
-    height: 42px;
+    width: 260px;
+    height: 50px;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
     position: relative;
-    left: -15px;
+    left: -30px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 90%;
-    font-weight: thin;
+    padding-left: 10px;
+    padding-left: 20px;
+    font-weight: 900;
+    font-size: 20px;
     
 }
 .iconinfo
 {
     color: #0065FC;
     border: 2px solid #F2F2F2;
-    padding: 3px;
     border-radius: 50px;
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: small;
-}
-.intro 
-{
-    position: relative;
-    left: -10px;
+    font-size: 20px;
+    margin-left: 20px;
 }
 .plus 
 {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    font-size: 90%;
+    font-size: 120%;
 }
+
 /* Bloc hebergements --------------------------------------------------------------------------------------------------------------------------------------*/
 .blocheberg
 {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 100%;
-    background-color: #F2F2F2 ;
-    border-radius: 20px;
-    margin-bottom: 30px;
 }
 .carteheberg
 {
-    width: 250px;
+    width: 90%;
     border-radius: 20px;
     box-shadow: 3px 3px 4px 4px #d6d4d4;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     background-color: white;
     margin: 20px;
 
 }
 .carteheberg:hover
 {
-    -ms-transform: scale(1.1); /* IE 9 */
-    -webkit-transform: scale(1.1); /* Safari 3-8 */
-    transform: scale(1.1);
+    -ms-transform: scale(1.05); /* IE 9 */
+    -webkit-transform: scale(1.05); /* Safari 3-8 */
+    transform: scale(1.05);
 }
 .imagecarte
 {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    padding: 4px;
+    padding: 8px;
     width: 100%;
-    height: 130px;
+    aspect-ratio: 20/7;
     object-fit: cover;
+       
 }
 .descriptioncarte
 {
@@ -284,15 +325,15 @@ color:#0065FC ;
 }
 .titrecarte
 {
-    font-size: medium;
+    font-size: 130%;
     font-weight: bolder;
     padding-bottom: 10px;
 }
 .desccarte
 {
-    font-size: 14px;
-    font-weight: 100;
-    padding-bottom: 6px;
+    font-size: 100%;
+    font-weight: thin;
+    padding-bottom: 20px;
 }
 
 .starpleine
@@ -307,17 +348,16 @@ color:#0065FC ;
 { 
     display: flex;
     flex: row;
+    font-size: 15px;
 }
-.cartesheb
+
+.cartes
 {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
 }
-
-
 
 
 /* Bloc populaire -------------------------------------------------------------------------------------------------------------------------------------- */
@@ -326,7 +366,7 @@ color:#0065FC ;
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-bottom: 15px;
+    background-color: #F2F2F2 ;
 }
 .titreclasspop
 { 
@@ -335,70 +375,72 @@ color:#0065FC ;
 }
 .cartepop
 {
-    width: 340px;
+    width: 90%;
     border-radius: 20px;
     box-shadow: 3px 3px 4px 4px #d6d4d4;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
     background-color: white;
-    margin:20px
+    margin: 5%;
 }
 .cartepop:hover
 {
-    -ms-transform: scale(1.1); /* IE 9 */
-    -webkit-transform: scale(1.1); /* Safari 3-8 */
-    transform: scale(1.1);
+    -ms-transform: scale(1.05); /* IE 9 */
+    -webkit-transform: scale(1.05); /* Safari 3-8 */
+    transform: scale(1.05);
 }
 .imagecartepop
 {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    padding: 4px;
+    padding: 8px;
     display: flex;
     justify-content: center;
     object-fit: cover;
-    width: 150px;
+    width: 100%;
     aspect-ratio: 1/1;
     
 } 
+.imgcartepop 
+{
+    width: 40%;
+}
 .descriptioncartepop
 {
     display: flex;
     flex-direction: column;
     align-items:flex-start;
     justify-content: flex-start;
-    padding-left: 10px;
-    padding-bottom: 15px;
+    padding-left: 3%;
+    padding-bottom: 3%;
+    padding-right: 5%;
+    width: 60%;
 }
 .titrecartepop
 {
-    padding-bottom: 10px;
-    padding-top: 10px;
-    font-size: 15px;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    font-size: 130%;
     font-weight: bolder;
     width: 100%;
 }
 .desccartepop
 {
-    font-size: 14px;
+    font-size: 100%;
     font-weight: 100;
-    padding-bottom: 6px;
+    padding-bottom: 40px;
     padding-top: 6px;
 }
 .notationpop
 { 
     display: flex;
     flex: row;
-    padding-top: 40px;
+    padding-top: 1%;
+    font-size: 15px;
 }
-.cartes
-{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
+
 /* Hebergements --------------------------------------------------------------------------------------------------------------------------------------*/
 #hebergements
 {
@@ -410,15 +452,12 @@ color:#0065FC ;
 .cartesactiv
 { 
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
     width: 100%;
 }
 .carteactivite1
 {
-    width: 300px;
-    height: 400px;
+    width: 90%;
     border-radius: 20px;
     box-shadow: 3px 3px 4px 4px #d6d4d4;
     display: flex;
@@ -428,14 +467,13 @@ color:#0065FC ;
 }
 .carteactivite1:hover
 {
-    -ms-transform: scale(1.1); /* IE 9 */
-    -webkit-transform: scale(1.1); /* Safari 3-8 */
-    transform: scale(1.1);
+    -ms-transform: scale(1.05); /* IE 9 */
+    -webkit-transform: scale(1.05); /* Safari 3-8 */
+    transform: scale(1.05);
 }
 .carteactivite2
 {
-    width: 300px;
-    height: 220px;
+    width: 90%;
     border-radius: 20px;
     box-shadow: 3px 3px 4px 4px #d6d4d4;
     display: flex;
@@ -451,39 +489,35 @@ color:#0065FC ;
 }
 .carteactivite3
 {
-    width: 300px;
-    height: 140px;
+    width: 90%;
     border-radius: 20px;
     box-shadow: 3px 3px 4px 4px #d6d4d4;
     display: flex;
     flex-direction: column;
     background-color: white;
     margin: 20px;
-    margin-top: 40px;
 }
 .carteactivite3:hover
 {
-    -ms-transform: scale(1.1); /* IE 9 */
-    -webkit-transform: scale(1.1); /* Safari 3-8 */
-    transform: scale(1.1);
+    -ms-transform: scale(1.05); /* IE 9 */
+    -webkit-transform: scale(1.05); /* Safari 3-8 */
+    transform: scale(1.05);
 }
 .carteactivite4
 {
-    width: 300px;
-    height: 180px;
+    width: 90%;
     border-radius: 20px;
     box-shadow: 3px 3px 4px 4px #d6d4d4;
     display: flex;
     flex-direction: column;
     background-color: white;
     margin: 20px;
-    margin-bottom: 35px;
 }
 .carteactivite4:hover
 {
-    -ms-transform: scale(1.1); /* IE 9 */
-    -webkit-transform: scale(1.1); /* Safari 3-8 */
-    transform: scale(1.1);
+    -ms-transform: scale(1.05); /* IE 9 */
+    -webkit-transform: scale(1.05); /* Safari 3-8 */
+    transform: scale(1.05);
 }
 .imagecarteactiv1
 {
@@ -492,8 +526,8 @@ color:#0065FC ;
     display: flex;
     justify-content: center;
     object-fit: cover;
-    width: 300px;
-    height: 350px;
+    aspect-ratio: 5/2;
+    width: 100%;
 }
 .imagecarteactiv2
 {
@@ -502,8 +536,8 @@ color:#0065FC ;
     display: flex;
     justify-content: center;
     object-fit: cover;
-    width: 300px;
-    height: 170px;
+    aspect-ratio: 5/2;
+    width: 100%;
 }
 .imagecarteactiv3
 {
@@ -512,8 +546,8 @@ color:#0065FC ;
     display: flex;
     justify-content: center;
     object-fit: cover;
-    width: 300px;
-    height: 90px;
+    aspect-ratio: 5/2;
+    width: 100%;
 }
 .imagecarteactiv4
 {
@@ -522,29 +556,30 @@ color:#0065FC ;
     display: flex;
     justify-content: center;
     object-fit: cover;
-    width: 300px;
-    height: 130px;
+    aspect-ratio: 5/2;
+    width: 100%;
 }
 .titrecarteact
 {
-    font-size: medium;
-    font-weight: bolder;
+    font-size: 110%;
+    font-weight: 900;
     padding: 15px;
 }
 
 /* FOOTER --------------------------------------------------------------------------------------------------------------------------------------*/
 
-.blocfooter
-{
-    padding-right: 100pxg;
-}
 footer
 {
     background-color: #F2F2F2;
-    padding: 50px;
+    padding: 2%;
     width: 100%;
-    position: absolute;
-    left: -5px;
     display: flex;
-    justify-content:space-between;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.blocfooter
+{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
 }

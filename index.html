@@ -6,10 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!--Normalize.css-->
         <script src="https://kit.fontawesome.com/9c41367ac0.js" crossorigin="anonymous"></script><!--Icones FontAwesome-->
-        <link rel="stylesheet" media="screen and (max-width: 768px)" href="mobile.css" /> <!--mobile-->
-        <link rel="stylesheet" media="screen and (max-width: 992px) and (min-width: 769px)" href="tablet.css" /> <!--mobile-->
-        <link rel="stylesheet" media="screen and (max-width: 1600px) and (min-width: 993px)" href="style.css" /> <!--mobile-->
-        <link rel="stylesheet" media="screen and (min-width: 1600px)" href="style-wide.css" /> <!--mobile-->
+        <link rel="stylesheet" href="css/mobile.css" type="text/css" /> <!--mobile-->
+        <link rel="stylesheet" href="css/tablet.css" type="text/css"/> <!--mobile-->
+        <link rel="stylesheet" href="css/style.css" type="text/css"/> <!--mobile-->
+        <link rel="stylesheet" href="css/style-wide.css" type="text/css" /> <!--mobile-->
     </head>
     <header>
         <div class="logomob"><img class="logo" src="images/logo/Booki.png" alt="logo booki"></div>
@@ -28,12 +28,12 @@
         <div class="blocrecherche">
         <div class="recherchedesktop">
             <div class="localisation"><i class="fa-solid fa-location-dot"></i></div>
-            <div class="find"><input type="search" placeholder="Marseille,France" id="site-search" name="q"></div>
+            <div class="find"><input type="text" placeholder="Marseille,France" id="site-search" name="q"></div>
             <div class="valid"><div class="validtext">Rechercher</div></div>
             </div>
             <div class="recherchemobile">
             <div class="localisation"><i class="fa-solid fa-location-dot"></i></div>
-            <div class="find"><input type="search" placeholder="Marseille, France" id="site-search" name="q"></div>
+            <div class="find"><input type="text" placeholder="Marseille, France" id="site-search" name="q"></div>
             <div class="valid"><div class="validtext"><i class="fa-solid fa-magnifying-glass"></i></div></div>
             </div>
         </div>
