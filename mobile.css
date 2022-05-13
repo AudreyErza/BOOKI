@@ -16,20 +16,20 @@ h1
 {
     font-size: 140%;
     font-weight: bolder;
-    margin: 20px;
+    margin: 10px;
     margin-top: 30px;
 }
 h2
 {
     font-size: 110%;
-    margin: 20px;
+    margin: 10px;
     font-weight: bolder;
     }
 h3
 {
     font-size: 100%;
-    font-weight: 400;
-    margin: 20px;
+    font-weight: 200;
+    margin: 10px;
 }
 h4
 {
@@ -97,7 +97,7 @@ li /*espacement entre les élements de menu*/
 {
     margin-top: 0px;
     margin-left: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     position: relative;
     left: -10px;
 }
@@ -172,8 +172,8 @@ li /*espacement entre les élements de menu*/
 .filtre
 {
     width: 100%;
-    margin: 20px;
     font-size: 120%;
+    padding-bottom: 10px;
 }
 .filtres
 {
@@ -346,7 +346,7 @@ align-items: center;
 { 
     display: flex;
     flex: row;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .cartes
@@ -436,7 +436,7 @@ align-items: center;
     display: flex;
     flex: row;
     padding-top: 1%;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 /* Hebergements --------------------------------------------------------------------------------------------------------------------------------------*/
@@ -559,9 +559,9 @@ align-items: center;
 }
 .titrecarteact
 {
-    font-size: 130%;
+    font-size: 110%;
     font-weight: 900;
-    padding: 25px;
+    padding: 15px;
 }
 
 /* FOOTER --------------------------------------------------------------------------------------------------------------------------------------*/
@@ -574,4 +574,9 @@ footer
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+}
+.blocfooter
+{
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
