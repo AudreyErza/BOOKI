@@ -29,7 +29,7 @@ h3
 {
     font-size: 120%;
     font-weight: 300;
-    margin: 20px;
+    margin: 25px;
 }
 
 a:link 
@@ -184,7 +184,7 @@ color:#0065FC ;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 90%;
+    font-size: 95%;
     font-weight: thin;
     
 }
@@ -208,7 +208,7 @@ color:#0065FC ;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 90%;
+    font-size: 95%;
     font-weight: thin;
     
 }
@@ -235,7 +235,7 @@ color:#0065FC ;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    font-size: 90%;
+    font-size: 95%;
 }
 /* Bloc hebergements --------------------------------------------------------------------------------------------------------------------------------------*/
 .blocheberg
@@ -337,14 +337,14 @@ color:#0065FC ;
 }
 .cartepop
 {
-    width: 340px;
+    width: 100%;
     border-radius: 20px;
     box-shadow: 3px 3px 4px 4px #d6d4d4;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     background-color: white;
-    margin:20px
+    margin: 10px;
 }
 .cartepop:hover
 {
@@ -360,7 +360,7 @@ color:#0065FC ;
     display: flex;
     justify-content: center;
     object-fit: cover;
-    width: 150px;
+    width: 120px;
     aspect-ratio: 1/1;
     
 } 
@@ -385,21 +385,21 @@ color:#0065FC ;
 {
     font-size: 14px;
     font-weight: 100;
-    padding-bottom: 6px;
-    padding-top: 6px;
+    padding-bottom: 4px;
+    padding-top: 4px;
 }
 .notationpop
 { 
     display: flex;
     flex: row;
-    padding-top: 40px;
+    padding-top: 7px;
 }
 .cartes
 {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-wrap: nowrap;
+    justify-content: center;
 }
 /* Hebergements --------------------------------------------------------------------------------------------------------------------------------------*/
 #hebergements
@@ -412,15 +412,12 @@ color:#0065FC ;
 .cartesactiv
 { 
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
     width: 100%;
 }
 .carteactivite1
 {
-    width: 300px;
-    height: 400px;
+    width: 95%;
     border-radius: 20px;
     box-shadow: 3px 3px 4px 4px #d6d4d4;
     display: flex;
@@ -430,14 +427,13 @@ color:#0065FC ;
 }
 .carteactivite1:hover
 {
-    -ms-transform: scale(1.1); /* IE 9 */
-    -webkit-transform: scale(1.1); /* Safari 3-8 */
-    transform: scale(1.1);
+    -ms-transform: scale(1.05); /* IE 9 */
+    -webkit-transform: scale(1.05); /* Safari 3-8 */
+    transform: scale(1.05);
 }
 .carteactivite2
 {
-    width: 300px;
-    height: 220px;
+    width: 95%;
     border-radius: 20px;
     box-shadow: 3px 3px 4px 4px #d6d4d4;
     display: flex;
@@ -453,39 +449,35 @@ color:#0065FC ;
 }
 .carteactivite3
 {
-    width: 300px;
-    height: 140px;
+    width: 95%;
     border-radius: 20px;
     box-shadow: 3px 3px 4px 4px #d6d4d4;
     display: flex;
     flex-direction: column;
     background-color: white;
     margin: 20px;
-    margin-top: 40px;
 }
 .carteactivite3:hover
 {
-    -ms-transform: scale(1.1); /* IE 9 */
-    -webkit-transform: scale(1.1); /* Safari 3-8 */
-    transform: scale(1.1);
+    -ms-transform: scale(1.05); /* IE 9 */
+    -webkit-transform: scale(1.05); /* Safari 3-8 */
+    transform: scale(1.05);
 }
 .carteactivite4
 {
-    width: 300px;
-    height: 180px;
+    width: 95%;
     border-radius: 20px;
     box-shadow: 3px 3px 4px 4px #d6d4d4;
     display: flex;
     flex-direction: column;
     background-color: white;
     margin: 20px;
-    margin-bottom: 35px;
 }
 .carteactivite4:hover
 {
-    -ms-transform: scale(1.1); /* IE 9 */
-    -webkit-transform: scale(1.1); /* Safari 3-8 */
-    transform: scale(1.1);
+    -ms-transform: scale(1.05); /* IE 9 */
+    -webkit-transform: scale(1.05); /* Safari 3-8 */
+    transform: scale(1.05);
 }
 .imagecarteactiv1
 {
@@ -494,8 +486,8 @@ color:#0065FC ;
     display: flex;
     justify-content: center;
     object-fit: cover;
-    width: 300px;
-    height: 350px;
+    aspect-ratio: 5/1;
+    width: 100%;
 }
 .imagecarteactiv2
 {
@@ -504,8 +496,8 @@ color:#0065FC ;
     display: flex;
     justify-content: center;
     object-fit: cover;
-    width: 300px;
-    height: 170px;
+    aspect-ratio: 5/1;
+    width: 100%;
 }
 .imagecarteactiv3
 {
@@ -514,8 +506,8 @@ color:#0065FC ;
     display: flex;
     justify-content: center;
     object-fit: cover;
-    width: 300px;
-    height: 90px;
+    aspect-ratio: 5/1;
+    width: 100%;
 }
 .imagecarteactiv4
 {
@@ -524,13 +516,13 @@ color:#0065FC ;
     display: flex;
     justify-content: center;
     object-fit: cover;
-    width: 300px;
-    height: 130px;
+    aspect-ratio: 5/1;
+    width: 100%;
 }
 .titrecarteact
 {
-    font-size: medium;
-    font-weight: bolder;
+    font-size: 110%;
+    font-weight: 900;
     padding: 15px;
 }
 
