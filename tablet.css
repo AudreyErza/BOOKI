@@ -148,7 +148,11 @@ li /*espacement entre les élements de menu*/
 {
     display: flex;
     align-items: center;
-
+}
+.filtreplus
+{
+    display: flex;
+    align-items: center;
 }
 .filtre
 {
@@ -170,7 +174,7 @@ color:#0065FC ;
     border-top: 3px solid #F2F2F2 ;
     border-bottom: 3px solid #F2F2F2 ;
     border-right: 3px solid #F2F2F2 ;
-    width: 200px;
+    width: 160px;
     height: 42px;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
@@ -179,7 +183,8 @@ color:#0065FC ;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 20px;
+    font-size: 90%;
+    font-weight: thin;
     
 }
 .textfiltre:hover
@@ -202,8 +207,8 @@ color:#0065FC ;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 10px;
-    padding-left: 20px;
+    font-size: 90%;
+    font-weight: thin;
     
 }
 .iconinfo
@@ -229,23 +234,21 @@ color:#0065FC ;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    font-size: 15px;
-    margin-left: 20px;
+    font-size: 90%;
 }
 /* Bloc hebergements --------------------------------------------------------------------------------------------------------------------------------------*/
 .blocheberg
 {
     display: flex;
     flex-direction: column;
-    width: 1200px;
-    height: 650px;
+    width: 100%;
     background-color: #F2F2F2 ;
     border-radius: 20px;
     margin-bottom: 30px;
 }
 .carteheberg
 {
-    width: 270px;
+    width: 250px;
     border-radius: 20px;
     box-shadow: 3px 3px 4px 4px #d6d4d4;
     display: flex;
@@ -265,10 +268,9 @@ color:#0065FC ;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     padding: 4px;
-    width: 268px;
+    width: 100%;
     height: 130px;
     object-fit: cover;
-       
 }
 .descriptioncarte
 {
@@ -307,14 +309,16 @@ color:#0065FC ;
     display: flex;
     flex: row;
 }
-
-.cartes
+.cartesheb
 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-content: space-between;
 }
+
+
 
 
 /* Bloc populaire -------------------------------------------------------------------------------------------------------------------------------------- */
@@ -322,12 +326,8 @@ color:#0065FC ;
 {
     display: flex;
     flex-direction: column;
-    width: 400px;
-    height: 650px;
-    background-color: #F2F2F2 ;
-    border-radius: 20px;
-    margin-left: 30px;
-    margin-bottom: 30px;
+    width: 100%;
+    margin-bottom: 15px;
 }
 .titreclasspop
 { 
@@ -336,7 +336,7 @@ color:#0065FC ;
 }
 .cartepop
 {
-    width: 400px;
+    width: 340px;
     border-radius: 20px;
     box-shadow: 3px 3px 4px 4px #d6d4d4;
     display: flex;
@@ -393,12 +393,18 @@ color:#0065FC ;
     flex: row;
     padding-top: 40px;
 }
-
+.cartes
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 /* Hebergements --------------------------------------------------------------------------------------------------------------------------------------*/
 #hebergements
 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
     justify-content: space-around;
 }
 /* Bloc activités --------------------------------------------------------------------------------------------------------------------------------------*/
@@ -406,6 +412,8 @@ color:#0065FC ;
 { 
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
 }
 .carteactivite1
@@ -529,16 +537,15 @@ color:#0065FC ;
 
 .blocfooter
 {
-    padding-right: 200px;
+    padding-right: 100pxg;
 }
 footer
 {
     background-color: #F2F2F2;
     padding: 50px;
-    margin: 0;
     width: 100%;
     position: absolute;
     left: -5px;
     display: flex;
-    justify-content: flex-start;
+    justify-content:space-between;
 }
