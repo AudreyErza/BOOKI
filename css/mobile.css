@@ -25,14 +25,14 @@ h1
 }
 h2
 {
-    font-size: 110%;
+    font-size: 120%;
     margin: 10px;
     font-weight: bolder;
     padding-left: 10px;
     }
 h3
 {
-    font-size: 100%;
+    font-size: 110%;
     font-weight: 400;
     margin: 10px;
     padding-left: 10px;
@@ -40,7 +40,7 @@ h3
 h4
 {
     font-size: 90%;
-    font-weight: 100;
+    font-weight: 400;
 }
 a:link 
 { 
@@ -109,8 +109,8 @@ li /*espacement entre les élements de menu*/
 }
 /* LA RECHERCHE --------------------------------------------------------------------------------------------------------------------------------------*/
 ::placeholder {
-    color: black;
-    font-weight: bold;
+    color: rgb(37, 37, 37);
+    font-weight: 500;
   }
 .recherchedesktop
 {
