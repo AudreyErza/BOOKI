@@ -349,7 +349,6 @@ align-items: center;
 .notation
 { 
     display: flex;
-    flex: row;
     font-size: 15px;
 }
 
@@ -438,7 +437,6 @@ align-items: center;
 .notationpop
 { 
     display: flex;
-    flex: row;
     padding-top: 1%;
     font-size: 15px;
 }
