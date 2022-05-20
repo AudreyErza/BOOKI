@@ -1,4 +1,4 @@
-@media screen and (min-width:993px) and (max-width:1280px) 
+@media screen and (min-width:993px) and (max-width:1480px) 
 {
 /*Ajout de la fonctionnalité box-sizing*/
 * {
@@ -17,23 +17,18 @@ body
 h1
 {
     font-size: 150%;
-    margin: 20px;
 }
 h2
 {
     font-size: 130%;
-    margin: 20px;
     }
 h3
 {
     font-size: 100%;
-    margin: 20px;
-    font-weight: 100;
 }
 h4
 {
     font-size: 90%;
-    font-weight: 100;
 }
 
 a:link 
@@ -257,11 +252,6 @@ color:#0065FC ;
     align-items: center;
     font-size: small;
 }
-.intro 
-{
-    position: relative;
-    left: -10px;
-}
 .plus 
 {
     display: flex;
@@ -270,7 +260,7 @@ color:#0065FC ;
     font-size: 15px;
     margin-left: 20px;
 }
-/* Hebergements --------------------------------------------------------------------------------------------------------------------------------------*/
+/* Hebergements OK--------------------------------------------------------------------------------------------------------------------------------------*/
 #hebergements
 {
     display: flex;
@@ -278,16 +268,26 @@ color:#0065FC ;
     justify-content: space-between;
     width: 100%;
     height: auto;
-    gap: 30px;
+    padding: 0px;
+    gap: 15px;
 }
 /* Bloc hebergements --------------------------------------------------------------------------------------------------------------------------------------*/
-.blocheberg
+.blocheberg /*OK*/
 {
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
     background-color: #F2F2F2 ;
     border-radius: 20px;
-    margin-bottom: 30px;
+    padding: 20px;
+    gap: 20px;
+}
+.cartesheb /*OK*/
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 30px;
 }
 .carteheberg
 {
@@ -333,7 +333,6 @@ color:#0065FC ;
 {
     font-size: medium;
     font-weight: bolder;
-    padding-bottom: 10px;
     width: 100%;
 }
 .desccarte
@@ -357,28 +356,20 @@ color:#0065FC ;
     display: flex;
 }
 
-.cartesheb
-{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    gap: 30px;
-}
-.hebergpave1
+
+.hebergpave1 /*OK*/
 {
     display: flex;
     flex-direction: row;
-    margin-left: 2%;
     width: 100%;
-    gap: 30px;
+    gap: 20px;
 }
-.hebergpave2
+.hebergpave2 /*OK*/
 {
     display: flex;
     flex-direction: row;
-    margin-left: 2%;
     width: 100%;
-    gap: 30px;
+    gap: 20px;
 }
 
 .affichplus
@@ -391,15 +382,19 @@ color:#0065FC ;
 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    width: 100%;
     background-color: #F2F2F2 ;
     border-radius: 20px;
-    margin-left: 30px;
+    padding: 20px;
+    margin: 0px;
+    gap: 20px;
 }
 .titreclasspop
 { 
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
+    align-items: center;
 }
 .cartepop
 {
@@ -462,8 +457,9 @@ color:#0065FC ;
 .cartes
 {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
 
 /* Bloc activités --------------------------------------------------------------------------------------------------------------------------------------*/
@@ -611,5 +607,4 @@ footer
     left: -5px;
     display: flex;
     justify-content: flex-start;
-}
 }
