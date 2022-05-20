@@ -397,7 +397,7 @@ color:#0065FC ;
 .cartes
 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
 }
