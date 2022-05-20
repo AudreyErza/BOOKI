@@ -1,4 +1,4 @@
-@media screen and (min-width:1450px) and (max-width:2500px) 
+@media screen and (min-width:1280px) and (max-width:2500px) 
 {/*Ajout de la fonctionnalité box-sizing*/
 * {
     box-sizing: border-box;
@@ -171,6 +171,16 @@ height: 42px;
 z-index: 1;
 color:#0065FC ;
 }
+.icon1
+{
+padding: 10px;
+background-color: #DEEBFF;
+border-radius: 50px;
+width: 42px;
+height: 42px;
+z-index: 1;
+color:#0065FC ;
+}
 .textfiltre
 {
     padding: 10px;
@@ -212,7 +222,24 @@ color:#0065FC ;
     justify-content: center;
     padding-left: 10px;
     padding-left: 20px;
-    
+}
+.textfiltre3
+{
+    padding: 10px;
+    border-top: 3px solid #F2F2F2 ;
+    border-bottom: 3px solid #F2F2F2 ;
+    border-right: 3px solid #F2F2F2 ;
+    width: 200px;
+    height: 42px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    position: relative;
+    left: -15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    font-size: 100%;
 }
 .iconinfo
 {
