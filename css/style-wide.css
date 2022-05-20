@@ -1,5 +1,6 @@
-@media screen and (min-width:1480px) and (max-width:2500px) 
-{/*Ajout de la fonctionnalité box-sizing*/
+@media screen and (min-width:1480px)
+{
+/*Ajout de la fonctionnalité box-sizing*/
 * {
     box-sizing: border-box;
    /* box-sizing est appliqué à tous les éléments */
@@ -16,23 +17,18 @@ body
 h1
 {
     font-size: 150%;
-    margin: 20px;
 }
 h2
 {
     font-size: 130%;
-    margin: 20px;
     }
 h3
 {
     font-size: 100%;
-    margin: 20px;
-    font-weight: 100;
 }
 h4
 {
     font-size: 90%;
-    font-weight: 100;
 }
 
 a:link 
@@ -52,7 +48,7 @@ a:visited
     height: 100px;
     display: flex;
     justify-content: flex-start;
-    padding-top: 30px;;
+    padding-top: 30px;
 }
 
 header
@@ -70,7 +66,7 @@ header
     justify-content: flex-end;
     list-style: none; /*suppression des points*/
     position: absolute;
-    right: 13%;
+    right: 10%;
 }
 
 li /*espacement entre les élements de menu*/
@@ -125,6 +121,7 @@ li /*espacement entre les élements de menu*/
 {
     border: none;
 }
+
 .valid
 { 
     background-color: #0065FC;
@@ -204,6 +201,8 @@ color:#0065FC ;
 {background-color: #F2F2F2;}
 .textfiltre2:hover
 {background-color: #F2F2F2;}
+.textfiltre3:hover
+{background-color: #F2F2F2;}
 
 .textfiltre2
 {
@@ -222,6 +221,7 @@ color:#0065FC ;
     justify-content: center;
     padding-left: 10px;
     padding-left: 20px;
+    
 }
 .textfiltre3
 {
@@ -254,11 +254,6 @@ color:#0065FC ;
     align-items: center;
     font-size: small;
 }
-.intro 
-{
-    position: relative;
-    left: -10px;
-}
 .plus 
 {
     display: flex;
@@ -266,26 +261,44 @@ color:#0065FC ;
     flex-wrap: wrap;
     font-size: 15px;
     margin-left: 20px;
-
+}
+/* Hebergements OK--------------------------------------------------------------------------------------------------------------------------------------*/
+#hebergements
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    gap: 15px;
 }
 /* Bloc hebergements --------------------------------------------------------------------------------------------------------------------------------------*/
-.blocheberg
+.blocheberg /*OK*/
 {
     display: flex;
     flex-direction: column;
-    width: 1200px;
-    height: 650px;
+    flex-wrap: nowrap;
     background-color: #F2F2F2 ;
     border-radius: 20px;
-    margin-bottom: 30px;
+    padding: 20px;
+    gap: 20px;
+}
+.cartesheb /*OK*/
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 30px;
 }
 .carteheberg
 {
-    width: 270px;
+    min-width: 250px;
     border-radius: 20px;
     box-shadow: 3px 3px 4px 4px #d6d4d4;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     background-color: white;
 
 }
@@ -300,9 +313,11 @@ color:#0065FC ;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     padding: 4px;
-    width: 268px;
+    width: 100%;
     height: 130px;
     object-fit: cover;    
+}
+
 }
 .descriptioncarte
 {
@@ -312,6 +327,7 @@ color:#0065FC ;
     justify-content: flex-start;
     padding-left: 10px;
     padding-bottom: 15px;
+    width: 100%;
     
 
 }
@@ -319,13 +335,14 @@ color:#0065FC ;
 {
     font-size: medium;
     font-weight: bolder;
-    padding-bottom: 10px;
+    width: 100%;
 }
 .desccarte
 {
     font-size: 14px;
     font-weight: 100;
     padding-bottom: 6px;
+    width: 100%;
 }
 
 .starpleine
@@ -341,15 +358,22 @@ color:#0065FC ;
     display: flex;
 }
 
-.cartesheb
+
+.hebergpave1 /*OK*/
 {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: space-between;
-    height: 470px;
+    width: 100%;
+    gap: 20px;
 }
+.hebergpave2 /*OK*/
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 20px;
+}
+
 .affichplus
 {
     margin-top: 10px;
@@ -360,21 +384,23 @@ color:#0065FC ;
 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 400px;
-    height: 650px;
+    width: 100%;
     background-color: #F2F2F2 ;
     border-radius: 20px;
-    margin-left: 30px;
+    padding: 20px;
+    margin: 0px;
+    gap: 20px;
 }
 .titreclasspop
 { 
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
+    align-items: center;
 }
 .cartepop
 {
-    width: 370px;
+    min-width: 370px;
     border-radius: 20px;
     box-shadow: 3px 3px 4px 4px #d6d4d4;
     display: flex;
@@ -433,17 +459,11 @@ color:#0065FC ;
 .cartes
 {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
 
-/* Hebergements --------------------------------------------------------------------------------------------------------------------------------------*/
-#hebergements
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
 /* Bloc activités --------------------------------------------------------------------------------------------------------------------------------------*/
 .blocactivite
 {
@@ -582,10 +602,10 @@ color:#0065FC ;
 footer
 {
     background-color: #F2F2F2;
-    padding: 50px;
-    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-}
+    margin-left: 10%;
+    margin-right: 12%;
+    width: 80%;
 }
