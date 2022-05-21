@@ -1,4 +1,4 @@
-@media screen and (min-width:1480px)
+@media screen and (min-width:1481px) and (max-width:2500px)
 {
 /*Ajout de la fonctionnalité box-sizing*/
 * {
@@ -318,7 +318,6 @@ color:#0065FC ;
     object-fit: cover;    
 }
 
-}
 .descriptioncarte
 {
     display: flex;
@@ -463,29 +462,70 @@ color:#0065FC ;
     justify-content: space-between;
     height: 100%;
 }
-
-/* Bloc activités --------------------------------------------------------------------------------------------------------------------------------------*/
+/* BLOC ACTIVITES -------------------------------------------------------------------------------------*/
 .blocactivite
 {
- width: 100%;
+ flex-direction: column;
+ flex-wrap: nowrap;
+ height: auto;
 }
 .cartesactiv
 { 
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
     width: 100%;
+    height: 420px;
+    gap: 30px;
 }
 .carteactivite1
 {
-    width: 300px;
+    width: 22%;
     height: 400px;
     border-radius: 20px;
     box-shadow: 3px 3px 4px 4px #d6d4d4;
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: column;
     background-color: white;
-    margin: 20px;
+    margin: 0px;
+}
+.carteactivite2
+{
+    width: 22%;
+    height: 220px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 4px 4px #d6d4d4;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: white;
+    margin: 0px;
+}
+.carteactivite3
+{
+    width: 22%;
+    height: 140px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 4px 4px #d6d4d4;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: white;
+    margin: 0px;
+}
+.carteactivite4
+{
+    width: 22%;
+    height: 180px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 4px 4px #d6d4d4;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: white;
+    margin: 0px;
 }
 .carteactivite1:hover
 {
@@ -493,52 +533,17 @@ color:#0065FC ;
     -webkit-transform: scale(1.1); /* Safari 3-8 */
     transform: scale(1.1);
 }
-.carteactivite2
-{
-    width: 300px;
-    height: 220px;
-    border-radius: 20px;
-    box-shadow: 3px 3px 4px 4px #d6d4d4;
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    margin: 20px;
-}
 .carteactivite2:hover
 {
     -ms-transform: scale(1.1); /* IE 9 */
     -webkit-transform: scale(1.1); /* Safari 3-8 */
     transform: scale(1.1);
 }
-.carteactivite3
-{
-    width: 300px;
-    height: 140px;
-    border-radius: 20px;
-    box-shadow: 3px 3px 4px 4px #d6d4d4;
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    margin: 20px;
-    margin-top: 40px;
-}
 .carteactivite3:hover
 {
     -ms-transform: scale(1.1); /* IE 9 */
     -webkit-transform: scale(1.1); /* Safari 3-8 */
     transform: scale(1.1);
-}
-.carteactivite4
-{
-    width: 300px;
-    height: 180px;
-    border-radius: 20px;
-    box-shadow: 3px 3px 4px 4px #d6d4d4;
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    margin: 20px;
-    margin-bottom: 35px;
 }
 .carteactivite4:hover
 {
@@ -548,43 +553,57 @@ color:#0065FC ;
 }
 .imagecarteactiv1
 {
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    display: flex;
-    justify-content: center;
-    object-fit: cover;
-    width: 300px;
     height: 350px;
 }
+
 .imagecarteactiv2
 {
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    display: flex;
-    justify-content: center;
-    object-fit: cover;
-    width: 300px;
     height: 170px;
 }
 .imagecarteactiv3
 {
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    display: flex;
-    justify-content: center;
-    object-fit: cover;
-    width: 300px;
     height: 90px;
 }
 .imagecarteactiv4
 {
+    height: 130px;
+}
+.imagecarteactiv1 img
+{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    display: flex;
-    justify-content: center;
     object-fit: cover;
-    width: 300px;
-    height: 130px;
+    width: 100%;
+    height: 100%;
+}
+.titreblocactivite
+{
+    margin: 30px;
+}
+
+.imagecarteactiv2 img
+{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.imagecarteactiv3 img
+{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.imagecarteactiv4 img
+{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 .titrecarteact
 {
@@ -592,20 +611,20 @@ color:#0065FC ;
     font-weight: bolder;
     padding: 15px;
 }
-
 /* FOOTER --------------------------------------------------------------------------------------------------------------------------------------*/
-
-.blocfooter
-{
-    padding-right: 200px;
-}
 footer
 {
     background-color: #F2F2F2;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     margin-left: 10%;
     margin-right: 12%;
-    width: 80%;
+    margin-top: 40px;
+    width: 100%;
+    position: relative;
+    left: -10%;
+    padding-left: 40px;
+    padding-right: 40px;
+}
 }
