@@ -43,12 +43,16 @@ a:visited
 } 
 
 /* HEADER + MENU --------------------------------------------------------------------------------------------------------------------------------------*/
-.logo
+.logodes
 {
     height: 100px;
     display: flex;
     justify-content: flex-start;
-    padding-top: 30px;;
+    padding-top: 30px;
+}
+.logomob
+{
+    display: none;
 }
 
 header
@@ -686,9 +690,8 @@ a:visited
     height: 100px;
     display: flex;
     justify-content: flex-start;
-    padding-top: 30px;;
+    padding-top: 30px;
 }
-
 header
 {
     margin: 30px;
