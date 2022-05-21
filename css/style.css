@@ -144,6 +144,7 @@ li /*espacement entre les élements de menu*/
 {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     font-size: 20px;
 }
 .filtre1
@@ -171,6 +172,7 @@ width: 42px;
 height: 42px;
 z-index: 1;
 color:#0065FC ;
+margin-bottom: 10px;
 }
 .icon1
 {
@@ -181,6 +183,7 @@ width: 42px;
 height: 42px;
 z-index: 1;
 color:#0065FC ;
+margin-bottom: 10px;
 }
 .textfiltre
 {
@@ -199,6 +202,7 @@ color:#0065FC ;
     justify-content: center;
     padding-left: 20px;
     font-size: 100%;
+    margin-bottom: 10px;
     
 }
 .textfiltre:hover
@@ -225,6 +229,7 @@ color:#0065FC ;
     justify-content: center;
     padding-left: 10px;
     padding-left: 20px;
+    margin-bottom: 10px;
     
 }
 .textfiltre3
@@ -244,6 +249,7 @@ color:#0065FC ;
     justify-content: center;
     padding-left: 20px;
     font-size: 100%;
+    margin-bottom: 10px;
 }
 .iconinfo
 {
