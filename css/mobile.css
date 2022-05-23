@@ -11,7 +11,7 @@
 /*ajout de la police Raleway*/
 body
 {
-    font-family:Raleway;
+    font-family:'Raleway';
     color: rgb(4, 4, 5);
     margin-left: 5px;
 }
@@ -108,11 +108,7 @@ li /*espacement entre les élements de menu*/
     color: rgb(37, 37, 37);
     font-weight: 500;
   }
-.recherchedesktop
-{
-    display: none;
-}
-.recherchemobile
+.recherche
 {
     display: flex;
     flex-direction: row;
@@ -143,7 +139,7 @@ li /*espacement entre les élements de menu*/
     justify-content: start;
     align-items: center;
 }
-#site-search-mob
+#site-search
 {
     border: none;
     font-size: 100%;
@@ -167,6 +163,9 @@ li /*espacement entre les élements de menu*/
     display: flex;
     justify-content: center;
     width: 100%;
+}
+.validtext{
+    display: none;
 }
 
 

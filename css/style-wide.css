@@ -84,15 +84,11 @@ li /*espacement entre les élements de menu*/
     color: black;
     font-weight: bold;
   }
-.recherchedesktop
+.recherche
 {
     display: flex;
     margin-bottom: 10px;
     height: 45px;
-}
-.recherchemobile
-{
-    display: none
 }
 .localisation
 { 
@@ -132,6 +128,10 @@ li /*espacement entre les élements de menu*/
     display: flex;
     justify-content: start;
     align-items: center;
+}
+.validico
+{
+    display: none;
 }
 
 /* LES FILTRES --------------------------------------------------------------------------------------------------------------------------------------*/
