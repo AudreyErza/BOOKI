@@ -17,19 +17,24 @@ body
 h1
 {
     font-size: 150%;
+    font-weight: 900;
 }
 h2
 {
     font-size: 130%;
+    font-weight: 400;
     }
 h3
 {
     font-size: 100%;
+    font-weight: 300;
 }
 h4
 {
     font-size: 90%;
+    font-weight: 200;
 }
+
 
 a:link 
 { 
@@ -664,18 +669,22 @@ body
 h1
 {
     font-size: 150%;
+    font-weight: 900;
 }
 h2
 {
     font-size: 130%;
+    font-weight: 400;
     }
 h3
 {
     font-size: 100%;
+    font-weight: 300;
 }
 h4
 {
     font-size: 90%;
+    font-weight: 200;
 }
 
 a:link 
@@ -730,7 +739,7 @@ li /*espacement entre les élements de menu*/
 ::placeholder {
     color: black;
     font-weight: bold;
-  }
+}
 .recherche
 {
     display: flex;
