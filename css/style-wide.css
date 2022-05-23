@@ -336,7 +336,7 @@ color:#0065FC ;
 .titrecarte
 {
     font-size: medium;
-    font-weight: bolder;
+    font-weight: 500;
     width: 100%;
 }
 .desccarte
@@ -465,7 +465,7 @@ color:#0065FC ;
     justify-content: space-between;
     height: 100%;
 }
-/* BLOC ACTIVITES -------------------------------------------------------------------------------------*/
+/* Bloc activités --------------------------------------------------------------------------------------------------------------------------------------*/
 .blocactivite
 {
  flex-direction: column;
@@ -509,7 +509,7 @@ color:#0065FC ;
 .carteactivite3
 {
     width: 22%;
-    height: 140px;
+    height: 150px;
     border-radius: 20px;
     box-shadow: 3px 3px 4px 4px #d6d4d4;
     display: flex;
@@ -521,7 +521,7 @@ color:#0065FC ;
 .carteactivite4
 {
     width: 22%;
-    height: 180px;
+    height: 186px;
     border-radius: 20px;
     box-shadow: 3px 3px 4px 4px #d6d4d4;
     display: flex;
@@ -565,11 +565,11 @@ color:#0065FC ;
 }
 .imagecarteactiv3
 {
-    height: 90px;
+    height: 100px;
 }
 .imagecarteactiv4
 {
-    height: 130px;
+    height: 136px;
 }
 .imagecarteactiv1 img
 {

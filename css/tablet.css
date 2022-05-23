@@ -521,7 +521,7 @@ margin-bottom: 10px;
 .carteactivite3
 {
     width: 22%;
-    height: 140px;
+    height: 150px;
     border-radius: 20px;
     box-shadow: 3px 3px 4px 4px #d6d4d4;
     display: flex;
@@ -533,7 +533,7 @@ margin-bottom: 10px;
 .carteactivite4
 {
     width: 22%;
-    height: 180px;
+    height: 185px;
     border-radius: 20px;
     box-shadow: 3px 3px 4px 4px #d6d4d4;
     display: flex;
@@ -577,11 +577,11 @@ margin-bottom: 10px;
 }
 .imagecarteactiv3
 {
-    height: 90px;
+    height: 100px;
 }
 .imagecarteactiv4
 {
-    height: 130px;
+    height: 135px;
 }
 .imagecarteactiv1 img
 {
@@ -622,8 +622,8 @@ margin-bottom: 10px;
 }
 .titrecarteact
 {
-    font-size: medium;
-    font-weight: bolder;
+    font-size: 90%;
+    font-weight: 400;
     padding: 15px;
 }
 /* FOOTER --------------------------------------------------------------------------------------------------------------------------------------*/

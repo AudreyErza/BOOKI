@@ -1162,7 +1162,7 @@ color:#0065FC ;
 .carteactivite3
 {
     width: 22%;
-    height: 140px;
+    height: 150px;
     border-radius: 20px;
     box-shadow: 3px 3px 4px 4px #d6d4d4;
     display: flex;
@@ -1174,7 +1174,7 @@ color:#0065FC ;
 .carteactivite4
 {
     width: 22%;
-    height: 180px;
+    height: 185px;
     border-radius: 20px;
     box-shadow: 3px 3px 4px 4px #d6d4d4;
     display: flex;
@@ -1218,11 +1218,11 @@ color:#0065FC ;
 }
 .imagecarteactiv3
 {
-    height: 90px;
+    height: 100px;
 }
 .imagecarteactiv4
 {
-    height: 130px;
+    height: 135px;
 }
 .imagecarteactiv1 img
 {

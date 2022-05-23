@@ -241,7 +241,6 @@ top: -5px;
     padding-left: 25px;
     margin-bottom: 10px;
     font-size: 17px;
-    font-weight: 200;
     
 }
 .textfiltre:hover
@@ -362,13 +361,13 @@ top: -5px;
 .titrecarte
 {
     font-size: 120%;
-    font-weight: bolder;
+    font-weight: 7s00;
     padding-bottom: 5px;
 }
 .desccarte
 {
     font-size: 90%;
-    font-weight: 400;
+    font-weight: 100;
     padding-bottom: 5px;
 }
 
@@ -458,13 +457,13 @@ top: -5px;
     padding-bottom: 3%;
     padding-top: 5%;
     font-size: 110%;
-    font-weight: bolder;
+    font-weight: 700;
     width: 100%;
 }
 .desccartepop
 {
     font-size: 100%;
-    font-weight: 400;
+    font-weight: 100;
     padding-bottom: 25px;
     padding-top: 6px;
 }
@@ -492,10 +491,10 @@ top: -5px;
 }
 .titreblocactivite
 {
-    margin: 30px;
+    margin: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 .carteactivite1
 {
@@ -613,7 +612,7 @@ top: -5px;
 .titrecarteact
 {
     font-size: 110%;
-    font-weight: 900;
+    font-weight: 700;
     padding: 15px;
 }
 
