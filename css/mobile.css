@@ -14,6 +14,8 @@ body
     font-family:'Raleway';
     color: rgb(4, 4, 5);
     margin-left: 5px;
+    margin: 0px;
+    overflow: hidden visible;
 }
 /*LES TITRES --------------------------------------------------------------------------------------------------------------------------------------*/
 h1
@@ -57,13 +59,13 @@ a:visited
 /* HEADER + MENU --------------------------------------------------------------------------------------------------------------------------------------*/
 .logo
 {
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: center;
     height: 80px;
     margin-top: 20px;
     position: relative;
-    left: 6%;
+    left: 10%;
 }
 header
 {
@@ -621,7 +623,6 @@ top: -5px;
 footer
 {
     background-color: #F2F2F2;
-    padding: 2%;
     width: 100%;
     display: flex;
     flex-direction: column;
